@@ -1,11 +1,12 @@
 import React from 'react';
+import { render } from '@testing-library/react';
 
-function Transactions() {
-  return (
-    <div>
-      <h1>Transactions</h1>
-    </div>
-  );
+class Transaction extends React.Component {
+    render() {
+        return (
+            <h1>Transactions {this.props.name}</h1>
+        )
+    }
 }
 
-export default Transactions;
+export default Transaction;
